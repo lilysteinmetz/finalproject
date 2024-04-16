@@ -26,44 +26,244 @@ nav ul a {
     color: black; 
 }
 
+nav ul a.current-page {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 nav ul a:hover {
     font-weight:bold;
     text-decoration: underline;
     
 }
 
-  @media screen and (min-width:550px){
-    
-    
-    h1{
-        font-size: 80px;
-        font-family: Big Caslon, sans-serif;
-        font-weight: 1000;
-        padding-top: 100px;
-        padding-left: 20px;
-    }
-    img{
-        border: 2px solid black;
-        margin-top: 80px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    body{
-        background-color: rgb(239, 236, 221);
-    }
-
-    .header{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    p{
-        padding-top: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-family: Big Caslon, sans-serif;
-        color: black;
-        font-size: 18px;
-        line-height: 1.5;
-    }
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    perspective: 1000px; 
   }
+
+  .flip-card p{
+    font-size: 15px;
+    color: black;
+    padding: 5px;
+  }
+
+  .flip-card h1{
+    font-size: 30px;
+    color: black;
+    padding-bottom: 10px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    border: 4px solid black;
+    background-color: cornsilk;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  .flip-card-back {
+    border: 4px solid black;
+    background-color:cornsilk;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    overflow: scroll;
+  }
+
+.work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.flip-card{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+#Intuit{
+    display: block;
+    margin: 60px auto 0;
+}
+h3{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 30px;
+}
+h4{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+li{
+    font-size: 20px;
+    margin-left: 40px;
+}
+ 
+.projects{
+    text-align: center;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 80px;
+  font-family: sans-serif;
+  padding-top: 50px;
+  font-weight: 1000;
+  padding-left: 50px;
+}
+
+h2{
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 60;
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+li{
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+img{
+  border: 2px solid black;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.intro1, .intro2{
+  border: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+body{
+  background-color: rgb(239, 236, 221);
+}
+
+.header{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hello{
+  padding-top: 150px;
+}
+
+p{
+  padding-top: 10px;
+  padding-bottom:10px ;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: sans-serif;
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+    
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+  
+.container {
+  margin-top: 80px;
+  border-radius: 5px;
+  background-color: cornsilk;
+  border: 4px solid black;
+  padding: 50px;
+}
+
+footer{
+  text-align: right;
+  margin-top: 60px;
+  background-color: cornsilk;
+  color: white;
+  border: 4px solid black;
+  padding: 15px;
+}
+.icon {
+  color: black; 
+  font-size: 24px; 
+  text-decoration: none; 
+  border: black solid 2px;
+  padding: 5px;
+  margin-right: 25px;
+}
+#Resume{
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+    
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0); 
+}

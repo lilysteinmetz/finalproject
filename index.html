@@ -5,29 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Index</title>
+    <script src="https://kit.fontawesome.com/3ce2d21176.js" crossorigin="anonymous"></script>
+    <title>ABOUT</title>
 </head>
 <body>
-    <a href = "#main" class="skip-to-main-content-link">Skip to Main Content</a>
+    <a href="#main" class="skip-to-main-content-link">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
-                <a class="current-page"><a href = "index.html">ABOUT</a>
-                <a href = "work.html">WORK</a>
-                <a href = "contact.html">CONTACT</a>
+                <li><a class="current-page" href="index.html">ABOUT</a></li> 
+                <li><a href="work.html">WORK</a></li>
+                <li><a href = "skills.html">RESUME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main id="main"> 
         <div class="header">
-            <h1>Hello, I'm Lily!</h1>
-            <img src="images/headshot.jpg" width="300px" alt="Headshot of Lily" >
+            <div class="hello">
+                <h1>Hello, I'm Lily!</h1>
+            </div>
+            <img src="images/headshot.jpg" alt="Headshot of Lily">
         </div>
-        <h2>Who am I?</h2>
-        <p>I am a second year student at the University of Michigan pursuing a B.S. in Information with a focus in User Experience Design as well as a minor in Entrepreneurship. I've always been intrigued by the intersection of technology and human behavior, which led to my passion for UX Design! Whether it's crafting new interfaces or conducting user research, I enjoy the challenge of creating meaningful experiences that resonate with people. In my free time, I'm usually at yoga, dance, or somewhere outdoors!</p>
-        <h2>What I'm up to?</h2>
-        <p>Currently enrolled in Professor Wolf's SI 339 course on Web Design, Development, and Accesibility, I am using the knowledge and skills that I've learned this semester to code this portfolio for myself. Outside of classes I am a co-designer for Maize and Blue Tutoring, Vice President of Outreach for Student's Run For Suicide Awareness and Prevention, Panhellenic Delegate of Chi Omega Sorority, and a member of Encore Dance club. I am finishing up my fourth semester here at Michigan and will be headed to Toronto this summer to intern at Intuit as a User Experience Researcher. </p>
+        
+        <h2 class="animate-on-scroll">Who am I?</h2> 
+        <div class="intro1 animate-on-scroll">
+            <p>I am a second year student at the University of Michigan pursuing a B.S. in Information with a focus in User Experience Design as well as a minor in Entrepreneurship. I've always been intrigued by the intersection of technology and human behavior, which led to my passion for UX Design! Whether it's crafting new interfaces or conducting user research, I enjoy the challenge of creating meaningful experiences that resonate with people. In my free time, I'm usually at yoga, dance, or somewhere outdoors!</p>
+        </div> 
+        <h2 class="animate-on-scroll">What I'm up to?</h2> 
+        <div class="intro2 animate-on-scroll"> 
+            <p>Currently enrolled in Professor Wolf's SI 339 course on Web Design, Development, and Accessibility, I am using the knowledge and skills that I've learned this semester to code this portfolio for myself. Outside of classes, I am a co-designer for Maize and Blue Tutoring, Vice President of Outreach for Student's Run For Suicide Awareness and Prevention, Panhellenic Delegate of Chi Omega Sorority, and a member of Encore Dance club. I am finishing up my fourth semester here at Michigan and will be headed to Toronto this summer to intern at Intuit as a User Experience Researcher.</p>
+        </div>
     </main>
-    
+    <footer>
+        <p>Author: Lily Steinmetz<br>
+        <a href="mailto:lilysteinmetz28@gmail.com">lilysteinmetz28@gmail.com</a></p>
+        <a href="https://www.linkedin.com/in/lily-steinmetz-082646264/" class="icon">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+    </footer>
+    <script src="js/main.js"></script> 
 </body>
 </html>
