@@ -1,19 +1,23 @@
-window.addEventListener('scroll', function () {
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    const resumeContainer = document.querySelector('.resume-container');
+window.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('scroll', function () {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        const resumeContainer = document.querySelector('.resume-container');
 
-    elements.forEach(function (element) {
-        if (isElementInViewport(element)) {
-            element.classList.add('visible');
+        elements.forEach(function (element) {
+            if (element && isElementInViewport(element)) {
+                element.classList.add('visible');
+            }
+        });
+
+        if (resumeContainer && isElementInViewport(resumeContainer)) {
+            resumeContainer.classList.add('resume-visible');
         }
     });
-
-    if (isElementInViewport(resumeContainer)) {
-        resumeContainer.classList.add('resume-visible');
-    }
 });
 
 function isElementInViewport(element) {
+    if (!element) return false; 
+
     const rect = element.getBoundingClientRect();
     return (
         rect.top >= 0 &&
