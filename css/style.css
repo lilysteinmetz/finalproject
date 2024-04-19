@@ -224,6 +224,12 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
   
+#contact-heading{
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 30px;
+}
 .container {
   margin-top: 80px;
   border-radius: 5px;
