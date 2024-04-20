@@ -9,7 +9,7 @@
     transform: translateY(0%);
   }
 nav {
-    background-color: none 
+    background-color: transparent; 
 }
 
 nav ul {
